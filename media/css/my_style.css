@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+   body {
+   	line-height: 1;
+   }
+   ol, ul {
+   	list-style: none;
+   }
+   blockquote, q {
+   	quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+   	content: '';
+   	content: none;
+   }
+   table {
+   	border-collapse: collapse;
+   	border-spacing: 0;
+   }
+
+   /* my css */
+
+   body
+   {
+   	width: 100%;
+	/*background: url(media/fond.jpg) no-repeat;
+	background-size: 100% 100%;*/
+}
+
+#site
+{
+	width: 1280px;
+	margin: auto;
+	font-family: 'Abel', sans-serif;
+}
+
+header h1
+{
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	margin-bottom: 5%;
+}
+
+/* Debut du menu de la mort qui tue */
+
+header nav
+{
+	clear: left;
+	margin: auto;
+	width: 10%;
+}
+
+header ul span
+{
+	/* Contenus */
+	width:0;/* si pas width overflow marche pas */
+	float: left;
+	left: 62px;
+	bottom: 15px;
+	position:absolute;/* si !=absolute overflow marche pas */
+	overflow:hidden;/* cache le span */
+
+	/* Text */
+	font-family:Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:0.6px;
+	white-space:nowrap;/* permet de mettre dans 1 ligne */
+	line-height:39px;/* permet de grossir le background */
+	-webkit-transition: 0.25s;/* pour chrome et safari */
+	-moz-transition: 0.25s;/* pour firefox */
+}
+
+header a
+{
+	height:64px;/* largeur d'un bouton */
+	width:64px;
+	display:inline-block;/* inline-block met moins d'espace */
+	position:relative;
+}
+
+header .home a
+{
+	background: url(../img/home.png) no-repeat;
+}
+
+header .search a
+{
+	background: url(../img/search.png) no-repeat;
+}
+
+header .contact a
+{
+	background: url(../img/mailback.png) no-repeat;
+}
+
+header .abonnement a
+{
+	background: url(../img/abonnement.png) no-repeat;
+}
+
+header .membre a
+{
+	background: url(../img/membre.png) no-repeat;
+}
+
+header a:hover span
+{ 
+	width:auto;
+	padding:0 20px;
+	overflow:visible;/* redevient visible */
+}
+
+header a:hover
+{
+	text-decoration:none;
+}
+
+header .home span
+{
+	background-color: rgb(85,119, 206);
+	color: white;
+}
+
+header .search span
+{
+	background-color: rgb(222, 198, 0);
+	color: white;
+}
+
+header .contact span
+{
+	background-color: rgb(116, 62, 232);
+	color: white;
+}
+
+header .abonnement span
+{
+	background-color: rgb(231, 84, 62);
+	color: white;
+}
+
+header .membre span
+{
+	background-color: rgb(0, 141, 222);
+	color: white;
+}
+
+/* Fin du menu de la mort qui tue */
+
+section
+{
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	width: 50%;
+}
+
+section h2
+{
+	font-size: 2em;
+	margin-bottom: 5%;
+}
+
+section h2 span
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+section article h3
+{
+	font-size: 1.5em;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
+}
+
+table tr td
+{
+	margin: auto;
+	border: 5px solid black;
+	width: 5%;
+	font-size: 1em;
+}
